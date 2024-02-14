@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AmazonSuite" class="navigator-link">
+              <span class="suite-name border-skipped">AmazonSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AmazonSuite" class="navigator-link ">
+                    <span>C:\Users\Dell\OneDrive\Documents\seleniumpractice\amazon\StagingLocal.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AmazonSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AmazonSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AmazonSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AmazonSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AmazonSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AmazonSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-AmazonSuite" class="hide-methods skipped suite-AmazonSuite"> (hide)</a> <!-- hide-methods skipped suite-AmazonSuite -->
+                      <a href="#" panel-name="suite-AmazonSuite" class="show-methods skipped suite-AmazonSuite"> (show)</a> <!-- show-methods skipped suite-AmazonSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-AmazonSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonSuite" title="AmaTests.AmazonDashboard" class="method navigator-link" hash-for-method="AmazonOperation">AmazonOperation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-AmazonSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AmazonSuite" class="panel AmazonSuite">
+          <div class="suite-AmazonSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">AmaTests.AmazonDashboard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AmazonOperation">
+                  </a> <!-- AmazonOperation -->
+                  <span class="method-name">AmazonOperation</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 99
+Current browser version is 104.0.5112.102 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;IFEANYI&apos;, ip: &apos;192.168.8.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00BA9943+2595139]
+	Ordinal0 [0x00B3C9F1+2148849]
+	Ordinal0 [0x00A34528+1066280]
+	Ordinal0 [0x00A542C3+1196739]
+	Ordinal0 [0x00A4FE37+1179191]
+	Ordinal0 [0x00A4D6F1+1169137]
+	Ordinal0 [0x00A80530+1377584]
+	Ordinal0 [0x00A8018A+1376650]
+	Ordinal0 [0x00A7B806+1357830]
+	Ordinal0 [0x00A56086+1204358]
+	Ordinal0 [0x00A56F96+1208214]
+	GetHandleVerifier [0x00D4B232+1658114]
+	GetHandleVerifier [0x00E0312C+2411516]
+	GetHandleVerifier [0x00C3F261+560433]
+	GetHandleVerifier [0x00C3E366+556598]
+	Ordinal0 [0x00B4286B+2173035]
+	Ordinal0 [0x00B475F8+2192888]
+	Ordinal0 [0x00B476E5+2193125]
+	Ordinal0 [0x00B511FC+2232828]
+	BaseThreadInitThunk [0x751EFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77367A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77367A6E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at AmaTests.AmazonDashboard.launchBrowser(AmazonDashboard.java:36)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonSuite-class-skipped -->
+        </div> <!-- panel AmazonSuite -->
+        <div panel-name="test-xml-AmazonSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Dell\OneDrive\Documents\seleniumpractice\amazon\StagingLocal.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;AmazonSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;server&quot; value=&quot;local&quot;/&gt;
+  &lt;parameter name=&quot;environment&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;downloadPath&quot; value=&quot;/home/seluser/Downloads/&quot;/&gt;
+  &lt;parameter name=&quot;myBrowser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;config&quot; value=&quot;parallel.conf.json&quot;/&gt;
+  &lt;parameter name=&quot;testEnv&quot; value=&quot;stagingData&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;AmazonDashboard&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AmaTests.AmazonDashboard&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;AmazonOperation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- AmaTests.AmazonDashboard --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AmazonDashboard --&gt;
+&lt;/suite&gt; &lt;!-- AmazonSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AmazonSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AmazonSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AmazonDashboard (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AmazonSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AmazonSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AmazonSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AmazonSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AmazonSuite');
+function tableData_AmazonSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AmazonOperation')
+data.setCell(0, 2, 'AmaTests.AmazonDashboard')
+data.setCell(0, 3, 0);
+window.suiteTableData['AmazonSuite']= { tableData: data, tableDiv: 'times-div-AmazonSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-AmazonSuite">
+              </div> <!-- times-div-AmazonSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AmazonSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AmazonSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AmazonSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AmazonSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">AmaTests.AmazonDashboard</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AmazonOperation</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

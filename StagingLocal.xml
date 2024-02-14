@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AmazonSuite" parallel="tests" thread-count="1">
+	<parameter name="myBrowser" value="chrome" />
+	<parameter name="environment" value="chrome" />
+	<parameter name="server" value="local" />
+	<parameter name="config" value="parallel.conf.json" />
+	<parameter name="downloadPath" value="/home/seluser/Downloads/" />
+	<parameter name="testEnv" value="stagingData" />
+
+    <test name="AmazonDashboard" preserve-order="true">
+        <classes>
+            <class name="AmaTests.AmazonDashboard">
+                <methods>
+                    <include name="AmazonOperation"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>                  	  
+</suite>  <!-- Suite -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [AmazonSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="server" value="local"/>
+  <parameter name="environment" value="chrome"/>
+  <parameter name="downloadPath" value="/home/seluser/Downloads/"/>
+  <parameter name="myBrowser" value="chrome"/>
+  <parameter name="config" value="parallel.conf.json"/>
+  <parameter name="testEnv" value="stagingData"/>
+  <test thread-count="1" parallel="tests" name="AmazonDashboard(failed)">
+    <classes>
+      <class name="AmaTests.AmazonDashboard">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="afterClass"/>
+          <include name="AmazonOperation"/>
+        </methods>
+      </class> <!-- AmaTests.AmazonDashboard -->
+    </classes>
+  </test> <!-- AmazonDashboard(failed) -->
+</suite> <!-- Failed suite [AmazonSuite] -->
